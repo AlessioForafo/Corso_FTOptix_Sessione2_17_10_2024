@@ -212,6 +212,15 @@ Children:
       Value: "/Types/ObjectTypes/BaseObjectType/UserType"
   - Name: Sessions
     Type: BaseObjectType
+  - Name: Session
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/UI/UISession1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
 - Name: WebPresentationEngine
   Type: ns=23;PresentationEngine
   Children:
@@ -324,6 +333,193 @@ Children:
         Type: BaseVariableType
         DataType: Boolean
         AccessLevel: Read
+  - Name: Session
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/UI/UISession1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
+- Name: UISession1
+  Id: g=1caf64676941a4e87d5304ecf170cb6b
+  Supertype: UISession
+  Children:
+  - Name: IsInteractive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: true
+  - Name: IsNative
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IsWeb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IpAddress
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: User
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: ActualLocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualLanguage
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualMeasurementSystem
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+  - Name: TimeZoneOffset
+    Type: BaseVariableType
+    DataType: TimeZoneDataType
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: Groups
+    Type: BaseObjectType
+  - Name: Roles
+    Type: BaseObjectType
+  - Name: Rights
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=1;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=266
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=269
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=272
+    Direction: Forward
+  - Name: LoggedIn
+    Type: BaseVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IdleTimeoutDuration
+    Type: BaseDataVariableType
+    DataType: Duration
+    ModellingRule: Optional
+    Value: "0:00:00:5.0000000"
+  - Name: IdleTimeoutEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: IdleTimeoutEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/IdleTimeoutEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../..@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Logout"
+      - Name: MethodContainer2
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NavigationPanel1}@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ChangePanelByTabIndex"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: Index
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":3,"TextId":"ChangePanelByTabIndexIndexDescription"}
+          - Name: AliasNode
+            Type: BaseDataVariableType
+            DataType: NodeId
+            Description: {"NamespaceIndex":3,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: IdleTimeoutEvent
+      Children:
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -541,3 +737,5 @@ Children:
       ModellingRule: Optional
       Value: 3
 - File: Screens/Screens.yaml
+- File: LoginForm/LoginForm.yaml
+- File: UserEditor/UserEditor.yaml

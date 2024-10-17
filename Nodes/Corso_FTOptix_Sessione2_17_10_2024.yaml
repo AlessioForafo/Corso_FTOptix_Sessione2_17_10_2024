@@ -9,13 +9,19 @@ Children:
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["en-US"]
+    Value: ["en-US","it-IT","ru-RU"]
   - Name: LocaleFallbackList
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
+  - Name: MeasurementSystemMap
+    Type: BaseDataVariableType
+    DataType: MeasurementSystemMapItem
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":235,"Namespace":1},"Body":{"From":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4408652,"NamespaceIndex":0}},"InternationalSystemOfUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4408652,"NamespaceIndex":0}},"USCustomarySystem":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":0,"NamespaceIndex":7}},"BritishImperialUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4604232,"NamespaceIndex":0}}}}]
 - Name: Authentication
   Type: PropertyGroup
   Children:
@@ -28,6 +34,9 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -37,7 +46,7 @@ Children:
   - Name: EnforcePasswordHistory
     Type: BaseDataVariableType
     DataType: Byte
-    Value: 1
+    Value: 10
   - Name: MinimumPasswordAge
     Type: BaseDataVariableType
     DataType: UInt16

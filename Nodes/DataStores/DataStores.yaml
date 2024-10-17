@@ -6,9 +6,11 @@ Children:
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=6ec50b7710b749406482d4ddefb468c5
     Type: BaseObjectType
     Children:
     - Name: DataLogger1
+      Id: g=72b3ca970d69a493d864171a11e94d2b
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -24,30 +26,39 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=126d5dfb66010b83e5eee0569071a735
         Type: BaseObjectType
         Children:
         - Name: Timestamp
+          Id: g=6d4b15468365d256e8b4931e9f10698d
           Type: StoreColumn
           DataType: UtcTime
         - Name: LocalTimestamp
+          Id: g=841996f4627275cc578bf34d3b990464
           Type: StoreColumn
           DataType: DateTime
         - Name: Variable1
+          Id: g=dfe52c06870b3a71b90f95cbcf3f88a8
           Type: StoreColumn
           DataType: Int32
         - Name: Variable2
+          Id: g=5cf02ad4de45f52343cfb37798bc1f74
           Type: StoreColumn
           DataType: Int32
         - Name: Variable3
+          Id: g=e1d31663f7793e1cc440a615a3fb4954
           Type: StoreColumn
           DataType: Int32
         - Name: Variable4
+          Id: g=df09c51bde2d9f7d1066e4c9ecac11f4
           Type: StoreColumn
           DataType: Int32
         - Name: Variable5
+          Id: g=1a55e498c473b06ff3fab9ce0cb12f50
           Type: StoreColumn
           DataType: Int32
     - Name: RecipeSchema1
+      Id: g=2c244ac2850ec4331ad0b2e1aa008422
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -63,18 +74,23 @@ Children:
         Target: ns=9;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=45b0c8791bbba02c763c9a4410173026
         Type: BaseObjectType
         Children:
         - Name: Name
+          Id: g=1dee14828c93b20900c89d041f262c49
           Type: StoreColumn
           DataType: String
         - Name: /Variable1
+          Id: g=718a9ec85d3dd4cd4419a3a253fe5127
           Type: StoreColumn
           DataType: Int32
         - Name: /Variable2
+          Id: g=8aced2c1fb7f8422b44a21c2e06f5e16
           Type: StoreColumn
           DataType: Boolean
         - Name: /Variable3
+          Id: g=acc929135112053eb2ab87496c176d3d
           Type: StoreColumn
           DataType: String
   - Class: Reference
@@ -84,20 +100,24 @@ Children:
     Target: ns=10;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=1f1ad39319460504224bd07835bc1bd5
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=44281f4699be8b36e577a665d920eb7d
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=f9a1cd6774102649d650dff0e9d8670b
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=856195f8205df31a0af37b684c04910e
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read
@@ -136,81 +156,7 @@ Children:
     Target: ns=9;i=59
     Direction: Forward
   - Name: Filename
+    Id: g=e7be41c85ef40e9eb4347e28a5793e54
     Type: BaseDataVariableType
     DataType: String
     Value: "MioDB"
-- Name: ODBCDatabase1
-  Type: ODBCStore
-  Children:
-  - Name: Tables
-    Type: BaseObjectType
-  - Name: Type
-    Type: PropertyType
-    DataType: DBMSType
-    Value: 2
-  - Name: Username
-    Type: PropertyType
-    DataType: String
-  - Name: Password
-    Type: PropertyType
-    DataType: Password
-  - Name: MaxColumnNameLength
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: MaxColumnCount
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: DataTypeCompatibilityMap
-    Type: BaseDataVariableType
-    DataType: NodeId
-    AccessLevel: Read
-    ValueRank: OneOrMoreDimensions
-    ArrayDimensions: [0,0]
-  - Name: Status
-    Type: PropertyType
-    DataType: StoreStatus
-    AccessLevel: Read
-    Value: 2
-  - Class: Reference
-    Target: ns=9;i=22
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=6
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=8
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=25
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=38
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=41
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=44
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=53
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=55
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=57
-    Direction: Forward
-  - Class: Reference
-    Target: ns=9;i=59
-    Direction: Forward
-  - Name: Server
-    Type: PropertyType
-    DataType: String
-    Value: "GJ9SSL3\\SQLEXPRESS"
-  - Name: Database
-    Type: PropertyType
-    DataType: String
-    Value: "CorsoVR_17_10_2024"

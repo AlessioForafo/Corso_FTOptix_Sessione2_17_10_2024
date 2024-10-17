@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class RecipesEditorUISetup : BaseNetLogic

@@ -81,14 +81,6 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 3.0
-  21:
-   Uri: 'urn:FTOptix:ODBCStore'
-   Module: FTOptix.ODBCStore
-   Version: 1.0
-  22:
-   Uri: 'urn:FTOptix:ODBCStore:Net'
-   Module: FTOptix.ODBCStore.Net
-   Version: 1.0
   23:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI
@@ -105,16 +97,24 @@ Project:
    Uri: 'urn:FTOptix:Recipe:Net'
    Module: FTOptix.Recipe.Net
    Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  28:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 1215
-  Objects: 257
-  ObjectTypes: 11
-  Variables: 937
+  TotalNodeCount: 2685
+  Objects: 543
+  ObjectTypes: 25
+  Variables: 2098
   VariableTypes: 0
   DataTypes: 0
-  Methods: 10
-  References: 56
+  Methods: 19
+  References: 67
   ReferenceTypes: 0
-  Files: 22
+  Files: 25
  Nodes:
  - File: Nodes/Corso_FTOptix_Sessione2_17_10_2024.yaml

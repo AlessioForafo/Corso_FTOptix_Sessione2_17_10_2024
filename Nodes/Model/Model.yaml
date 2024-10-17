@@ -1,5 +1,106 @@
 Name: Model
 Type: ModelCategoryFolder
 Children:
+- Name: EngineeringUnitDictionary1
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":0,"DisplayName":{"LocaleId":"en-US","Text":"°r"},"Description":{"LocaleId":"en-US","Text":"Remur"},"PhysicalDimension":3,"Slope":0.75,"Intercept":0.0}}]
 - File: DataloggerVariables/DataloggerVariables.yaml
 - File: RecipeVariables/RecipeVariables.yaml
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    DisplayName: {"NamespaceIndex":0,"TextId":"EngineeringUnitsDisplayName"}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+- Name: AnalogVariable1
+  Type: AnalogItemType
+  DataType: Float
+  Value: 42.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+- Name: Motor
+  Type: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Color
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: ns=0;EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      DisplayName: {"NamespaceIndex":0,"TextId":"EngineeringUnitsDisplayName"}
+      Children:
+      - Name: UnitId
+        Type: BaseVariableType
+        DataType: Int32
+        ReferenceType: HasProperty
+        Value: 4410708
+      - Name: DisplayName
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+      - Name: Description
+        Type: BaseVariableType
+        DataType: LocalizedText
+        ReferenceType: HasProperty
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "0"

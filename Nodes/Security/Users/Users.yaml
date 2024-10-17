@@ -1,3 +1,27 @@
 Name: Users
 Id: g=8cdfe95c558e909385d4fe7ddc9a2655
 Type: UsersCategoryFolder
+Children:
+- Name: User1
+  Id: g=b27f35733809b7208b2228ffce8793a4
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=d755970e1acc278640db9740a18159c0
+  - Class: Reference
+    Type: HasGroup
+    Target: g=03d7767ca4c173037dbc035641fcd883
+- Name: User2
+  Id: g=e791fef761c801187d47978a843efc43
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=03d7767ca4c173037dbc035641fcd883
+  - Name: LocaleId
+    Id: g=f946e50123573add014a62c72a4562c6
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "ru-RU"
