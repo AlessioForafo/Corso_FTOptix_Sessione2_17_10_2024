@@ -13,6 +13,7 @@ using FTOptix.CoreBase;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.OPCUAServer;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class RecipesEditorComboBoxLogic : BaseNetLogic

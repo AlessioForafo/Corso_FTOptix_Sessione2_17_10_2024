@@ -16,6 +16,7 @@ using FTOptix.Core;
 using FTOptix.ODBCStore;
 using FTOptix.WebUI;
 using FTOptix.Recipe;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class GenericTableExporter : BaseNetLogic
