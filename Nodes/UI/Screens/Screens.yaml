@@ -4560,6 +4560,7 @@ Children:
     - Name: Active
       Type: BaseDataVariableType
       DataType: Boolean
+      Value: true
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -4574,7 +4575,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 420.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -4591,7 +4592,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
-      Value: "#0000ff"
+      Value: "#ffff00"
     - Name: BlinkWhenActive
       Type: BaseDataVariableType
       DataType: Boolean
