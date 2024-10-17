@@ -4579,7 +4579,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 160.0
+      Value: 370.0
     - Name: Appearance
       Type: BaseVariableType
       DataType: String
@@ -4587,6 +4587,16 @@ Children:
       Value: "rectangular"
     - Name: ColoriLed_NetLogic
       Type: NetLogic
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#0000ff"
+    - Name: BlinkWhenActive
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
   - Name: SpinBox1
     Type: SpinBox
     Children:
