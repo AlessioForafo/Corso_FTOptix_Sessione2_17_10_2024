@@ -17,6 +17,7 @@ using FTOptix.Store;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
+using FTOptix.Alarm;
 #endregion
 
 public class RecipesEditorUISetup : BaseNetLogic

@@ -104,3 +104,19 @@ Children:
     Type: BaseDataVariableType
     DataType: ResourceUri
     Value: "0"
+- Name: Allarmi
+  Id: g=1d88c51c6b8f866f109dee183eb915cb
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+- Name: ColoriLed
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ColoriLedChanged
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ColoriLed"

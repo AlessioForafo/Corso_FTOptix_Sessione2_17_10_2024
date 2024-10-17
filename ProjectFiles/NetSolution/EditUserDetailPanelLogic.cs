@@ -9,6 +9,7 @@ using FTOptix.WebUI;
 using System.Linq;
 using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
+using FTOptix.Alarm;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic

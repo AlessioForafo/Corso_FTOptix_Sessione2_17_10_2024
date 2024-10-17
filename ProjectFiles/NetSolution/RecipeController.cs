@@ -14,6 +14,7 @@ using System.Globalization;
 using FTOptix.Store;
 using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
+using FTOptix.Alarm;
 
 #endregion
 

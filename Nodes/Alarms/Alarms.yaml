@@ -1,3 +1,269 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: Allarme_0
+  Id: g=6d1683e07c5d4a89983eb9a9b44889d9
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=cded88ea3a8f9bb6ddc0b7bb75321867
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=8f49fa797370415eb4637889c35df07d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=9f08589571014b3fb492eefae8832aa4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/Model/Allarmi[0]"
+      Children:
+      - Name: Mode
+        Id: g=a7269134d3134517bb51d220fdf899d1
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=39d7751ffec4739acbe6d7bc3dc7365a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=cee2b4aa468723d8a50e096843e8eb55
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Testo allarme 0"}
+- Name: Allarme_1
+  Id: g=88d0933d3dfd421ab37d64f0e0305202
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=77e899179eb3676ec35414d9cc819be0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=f41b1661d2776f063c968f9adcca7af5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f2e0a299ab7b431ab0430c9c98700822
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/Model/Allarmi[1]"
+      Children:
+      - Name: Mode
+        Id: g=c6fdbb00d4694c84bb6605fcd73be6f4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=280e72eed997da3d8a283fb60cce66a3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=0408aabfaf27e171ae0d43906ee48c00
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Testo allarme 1"}
+- Name: Allarme_2
+  Id: g=2e9e519c15cf4849891e3fc6308c736c
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=06748ebf9a003d20cbcb954586453164
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6a8006d5ab40f8b24c09be1b3a0adaf6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2a45dee1b78f45289f55c726e0e88110
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/Model/Allarmi[2]"
+      Children:
+      - Name: Mode
+        Id: g=9d18755f568c4693841a78a14e8cd8c3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=b66b14db13c2efad9161139948581c0a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=583beac95f67d5e12e4f1bf8be0bb2db
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Testo allarme 2"}
+- Name: Allarme_3
+  Id: g=49ebf01fbfea49a5a4a97e5db4abf3de
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c6809f691c30155d3df6a5afd8531fec
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=e2996fbec67d2746d8f1b2cabde7e37c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c19b2fbd366a430c86a9951b2ee84db8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/Model/Allarmi[3]"
+      Children:
+      - Name: Mode
+        Id: g=4707e3c9b4944d27adf463ab0eccc110
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d32268b5c0002b3245e88023bb001219
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=e5e860855282637e6723e9024c95fd16
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Testo allarme 3"}
+- Name: Allarme_4
+  Id: g=84ad71697589424bba3623ca99a1b475
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=81e4e3ede6d8869c4f4f2d776ca0371f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=fe1a861d053d8c7d675a1679348b2b7a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2503a86c2557424e9c9b3ea6aa879c35
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/Corso_FTOptix_Sessione2_17_10_2024/Model/Allarmi[4]"
+      Children:
+      - Name: Mode
+        Id: g=e548d4692ef94c01bff614446694d4ef
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e39c587e8aec21e00e3a3dd88a7e3b6a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=29;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=28b4832648d678c7c9405a2beb9660f6
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Testo allarme 4"}

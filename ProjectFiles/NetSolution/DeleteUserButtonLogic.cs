@@ -7,6 +7,7 @@ using System.Linq;
 using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
+using FTOptix.Alarm;
 #endregion
 
 public class DeleteUserButtonLogic : BaseNetLogic

@@ -7,6 +7,7 @@ using FTOptix.UI;
 using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
 using FTOptix.OPCUAClient;
+using FTOptix.Alarm;
 #endregion
 
 public class UserEditorGroupsPanelLogic : BaseNetLogic
