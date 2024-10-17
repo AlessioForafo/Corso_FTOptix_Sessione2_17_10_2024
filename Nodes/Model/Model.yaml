@@ -105,7 +105,6 @@ Children:
     DataType: ResourceUri
     Value: "0"
 - Name: Allarmi
-  Id: g=1d88c51c6b8f866f109dee183eb915cb
   Type: BaseDataVariableType
   DataType: Boolean
   ValueRank: OneDimension
